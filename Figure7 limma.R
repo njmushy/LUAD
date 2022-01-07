@@ -4,7 +4,7 @@
 
 
 setwd("D:\\original data")
-rt=read.table("cibersort_result.txt",row.names="geneNames",sep="\t",header=T)
+rt=read.table("all_checkpoint_group.txt",row.names="geneNames",sep="\t",header=T)
 #加载limma包，用于校正和比较差异
 library(limma)
 

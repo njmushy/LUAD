@@ -37,10 +37,10 @@ library(ggpubr)
 library(pRRophetic)
 library(ggplot2)
 set.seed(12345)
-expFile="symbol.txt"     #表达输入文件
-riskFile="risk.txt"      #风险输入文件
+expFile="predictting_LUAD_IC50.txt"     #表达输入文件
+riskFile="sample_risk.txt"      #风险输入文件
 drug="Rapamycin"         #药物名称，需要修改
-setwd("D:\\biowolf\\irlncRNA\\25.pRRophetic")    #设置工作目录
+setwd("D:\\original data")    #设置工作目录
 
 #读取表达输入文件,并对数据进行处理
 rt = read.table(expFile, header=T, sep="\t", check.names=F)
